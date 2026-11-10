@@ -29,7 +29,7 @@ export default function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleItemPress = (item) => {
+  const handleItemPress = (item: string) => {
     if (item === "Trigger Alert") {
       Alert.alert("Alert Dialog", "This is an Alert popup window.", [
         { text: "OK" },
